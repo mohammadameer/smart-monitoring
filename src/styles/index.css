@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+}
+
+.outsideCorner {
+  left: -30%;
+  bottom: -30%;
+}
+
+.black {
+  background-color: black;
+}
