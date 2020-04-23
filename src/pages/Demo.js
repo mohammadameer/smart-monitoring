@@ -39,7 +39,7 @@ export default () => {
         <video
           className="w-full h-full border-solid border-8 rounded-lg border-gray-800 "
           ref={videoRef}
-          style={{ maxHeight: "500px" }}
+          style={{ maxWidth: "400px" }}
           width="1280"
           height="720"
         />
@@ -51,7 +51,7 @@ export default () => {
 
         <GaugeChart data={gaugeData} />
         <button
-          className="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded"
+          className="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded absolute bottom-0 left-0 m-10 p-10"
           onClick={() => setShouldClassify(!shouldClassify)}
         >
           {shouldClassify ? "Stop classifying" : "Start classifying"}
